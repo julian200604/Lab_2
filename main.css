@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto+Condensed:wght@500&display=swap');
+
+body {
+    margin-left: 300px;
+    max-width: 960px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+
+}
+/*columns = columnas
+rows = filas
+fracción = fr
+repeat = hace que sea mas practico para poner parametros, ejemplo: repeat(6, 1fr) 
+*/
+
+.header {
+    background-color: #B2B2B2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    grid-column: 1/4;
+    margin-bottom: 0;
+}
+
+.titulo-grande {
+    font-size: 100px;
+    font-weight: 300px;
+    margin-left: 200px; 
+}
+
+.titulo-pequeno {
+    font-size: 30px; 
+    font-weight: 200; 
+    margin-left: 200px; 
+}
+
+.header img {
+    height: 150px; 
+    margin-right: 200px; 
+}
+
+.menu {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #F2A516;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 70px;
+    margin-top: 0;
+}
+
+nav ul li a {
+    margin: 20px;
+    justify-content: space-around;
+    color: #000;
+    text-decoration: none;
+    padding: 30px 30px;
+    font-weight: 500;
+    font-size:xx-large ;
+    grid-column: 1/4;
+    margin-top: 0%;
+}
+
+.element1 {
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.element2 {
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.element3 {
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.element5 {
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.element6 {
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.element1-head {
+    background-color: black;
+    color: #b2b2b2;
+    padding: 3px;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.element2-head {
+    background-color: black;
+    color: #b2b2b2;
+    padding: 3px;
+    text-align: center;
+    border-top-left-radius: 25px;
+} 
+
+.element3-head {
+    background-color: black;
+    color: #b2b2b2;
+    padding: 3px;
+    text-align: center;
+    border-top-right-radius: 25px;
+} 
+
+.element5-head {
+    background-color: black;
+    color: #b2b2b2;
+    padding: 3px;
+    text-align: center;
+} 
+
+.element6-head {
+    background-color: black;
+    color: #b2b2b2;
+    padding: 3px;
+    text-align: center;
+}
+
+.element1-body {
+    padding: 10px;
+    height: 300px;
+    background-color: #b2b2b2;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+}
+
+.element2-body {
+    padding: 10px;
+    background-color: #F3F1F2;
+    text-align: center;
+}
+
+.element3-body {
+    padding: 10px;
+    background-color: #F3F1F2;
+    text-align: center;
+} 
+
+.element5-body {
+    padding: 10px;
+    background-color: #F3F1F2;
+    text-align: center;
+    border-bottom-left-radius: 25px;
+}
+
+.element6-body {
+    padding: 10px;
+    background-color: #F3F1F2;
+    text-align: center;
+    border-bottom-right-radius: 25px;
+}
+
+.element1-body button {
+    background-color: #F2A516;
+    width: 100px;
+    margin-left: 100px;
+    color: grey;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.element2-body img , .element3-body img, .element5-body img, .element6-body img {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.element4 {
+    background-color: black;
+}
+
+.element4 h2 {
+    color: #F2A516;
+    text-align: center;
+    padding: 4%;
+}
+
+.element4 p {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+footer {
+    border-end-start-radius:  25px;
+    border-end-end-radius: 25px;
+    background-color: #000;
+    width: 100%;
+    grid-column: 1/4;
+}
+
+footer p {
+    text-align: center;
+    font-size: large;
+    padding: 20px;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin-left: 0;
+        max-width: none;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+    .titulo-grande{
+        text-align: center;
+        margin-left: 10px;
+        font-size: 50px;
+    }
+    .titulo-pequeno {
+        margin-left: 10px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .header img {
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        font-size: small;
+        margin: 10px;
+    }
+
+    .element1-body button {
+        margin-left: 0;
+    }
+    
+}
+
