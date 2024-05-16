@@ -221,38 +221,81 @@ footer p {
 @media (max-width: 600px) {
     body {
         margin-left: 0;
-        max-width: none;
+        max-width: 100%;
     }
     .grid {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1em;
     }
 
-    .titulo-grande{
-        text-align: center;
-        margin-left: 10px;
-        font-size: 50px;
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
     }
-    .titulo-pequeno {
-        margin-left: 10px;
+
+    .titulo-grande {
+        font-size: 50px;
+        margin-left: 0;
         text-align: center;
-        font-size: 10px;
+    }
+
+    .titulo-pequeno {
+        font-size: 20px;
+        margin-left: 0;
+        text-align: center;
     }
 
     .header img {
+        height: 100px;
         margin-right: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 0;
     }
 
     nav ul li a {
         padding: 10px;
-        font-size: small;
-        margin: 10px;
+        font-size: medium;
+        margin: 5px 0;
     }
 
+    .element1, .element2, .element3, .element5, .element6 {
+        margin: 10px 0;
+        width: 250px;
+    }
+    .element1-head {
+        border-radius: 0px;
+        border-top-left-radius: 25px;
+    }
+    .element2-head {
+        border-radius: 0px;
+        border-top-right-radius: 25px;
+    }
+    .element3-head {
+        border-radius: 0px;
+    }
+    .element2-body img , .element3-body img, .element5-body img, .element6-body img {
+        width: 200px;
+        border-radius: 5px;
+    }
     .element1-body button {
-        margin-left: 0;
+        margin-left: 100px;
     }
-    
+    footer {
+        grid-column: 1/3;
+    }
 }
-
